@@ -68,7 +68,7 @@ Your program will repeat this computation in all languages. It should then norma
 
 Take a look at LanguageDetector.java. 
 You'll complete your work for part 1 in this class.
-The major methods, ```train()```, `detect()`, and `main()` had been decleared for you but currently they don't do anything useful.
+The major methods, `train()`, `detect()`, and `main()` had been decleared for you but currently they don't do anything useful.
 
 A LanguageDetector must be trained once to identify words in each language. 
 The train method essentially "precomputes" the counts for each word in each language to speed up language detection.
