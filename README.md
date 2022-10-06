@@ -137,6 +137,7 @@ For example, if your sentence is "Macalester is a liberal arts college", you wou
 * liberal arts college, liberal arts, liberal
 * arts college, arts
 * college
+
 In this example, you would give preference to the starting trigram for each bullet point if it is found as an article title.
 
 
