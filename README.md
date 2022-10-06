@@ -1,6 +1,6 @@
 Comp 128 - HW2: Multilingual entity extraction
 ===
-In this homework assignment you will develop a program that analyzes text in another language. Your program will:
+In this homework assignment you will develop a program that analyzes text written in another language. Your program will:
 
 - Detect the language of a passage of text.
 - Identify concepts in the text associated with Wikipedia articles.
