@@ -74,7 +74,7 @@ The major methods, `train()`, `detect()`, and `main()` had been decleared for yo
 A LanguageDetector must be trained once to identify words in each language. 
 The train method essentially "precomputes" the counts for each word in each language to speed up language detection.
 
-`train()` Method
+# `train()` Method
 
 The train method needs to do the following:
 
@@ -86,7 +86,7 @@ The train method needs to do the following:
 
 You'll need to create instance variables to capture the data (counts for each word for each language and the total number of words read for each language).
 
-`detect(text)` Method
+### `detect(text)` Method
 
 Given a particular text, the detect method does the following: 
 * Split the text into words.
