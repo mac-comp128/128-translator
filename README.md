@@ -49,7 +49,8 @@ translating text from Hindi to English found entites:
 
 Along the way, you'll get a chance to practice with Java's Maps. Otherwise known as HashMaps, hashtables, or dictionaries.
  
-### Part 1: Language detector
+Part 1: Language detector
+---
 
 For your first task, you'll write a class that detects the language of a text. 
 
@@ -97,7 +98,8 @@ Choose the language with the highest count.
 Test your program by Googling texts in each language. As you are testing, it will speed up your program to use fewer random pages, although it will also make it more likely that the language is not detected.
 Your program should do a pretty good job, but it may get a few languages confused - for example Scots and English which contain many duplicate words.
 
-### Part 2: Entity extractor
+Part 2: Entity extractor
+---
 
 I have provided you with an empty entity extractor class. 
 For the second portion of the homework, you'll need to complete the entity extractor class and the main method that uses it.
