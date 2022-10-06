@@ -74,7 +74,7 @@ The major methods, `train()`, `detect()`, and `main()` had been decleared for yo
 A LanguageDetector must be trained once to identify words in each language. 
 The train method essentially "precomputes" the counts for each word in each language to speed up language detection.
 
-# `train()` Method
+### `train()` Method
 
 The train method needs to do the following:
 
@@ -104,7 +104,9 @@ Part 2: Entity extractor
 I have provided you with an empty entity extractor class. 
 For the second portion of the homework, you'll need to complete the entity extractor class and the main method that uses it.
 
-**A. Implement a simple extract:** Your `extract()` method should first detect the language of the text using its language detector.
+### A. Implement a simple extract
+
+Your `extract()` method should first detect the language of the text using its language detector.
 Next, split your text into words and check each word to see if it is the title of a Wikipedia article in the source langauge.
 If a word does correspond to an article, try to find the english equivalent of the article (this isn't always possible).
 Format your results similarly to the output you see above. Make sure that you use good method decomposition.
@@ -114,13 +116,17 @@ You do not need to worry about capitalization (although handling this would prob
 
 As usual when implementing methods, make sure you use good method decomposition. For guidelines on method decomposition, refer to our java style guide (linked on moodle). Most importantly, each method should have a single clear purpose. The description of the extract method above is doing multiple things (e.g. splitting up words, checking if a page exists in the source language, finding corresponding pages in English, etc.). You should think about how to split this into multiple methods (with clear descriptive names).
 
-**B. Implement main:** Complete the main method of your program.
+### B. Implement main
+
+Complete the main method of your program.
 You can model your work on the LanguageDetector's main method.
 Create the components necessary for an entity extractor and then create the entity extractor itself.
 Repeatedly ask the user for a text and then extract entities in the text.
 You should now be able to test your program, but it will only extract single word concepts.
 
-**C. Optional Extras: Implement a fancy extract:**
+
+### C. Optional Extras: Implement a fancy extract
+
 This part is not required, but it's a fun little exercise that will improve your translation results.
 
 You'll improve the performance of your algorithm by looking for more *specific* concepts that span more than one word (e.g. `Barack Obama`).
