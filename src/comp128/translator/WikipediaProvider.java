@@ -47,7 +47,7 @@ public class WikipediaProvider {
         String pageQuery = "https://"+languageCode+".wikipedia.org//w/api.php?page="+encodeValue(title)+"&format=json&action=parse";
         JSONObject pageResult = sendGET(pageQuery);
 
-        if (pageResult.keySet().contains("error") && pageResult.getJSONObject("error").getString("code").equals("missingtitle")){
+        if (pageResult == null || (pageResult.keySet().contains("error") && pageResult.getJSONObject("error").getString("code").equals("missingtitle"))){
             return null;
         }
         return new LocalPage(languageCode, title);
@@ -192,6 +192,12 @@ public class WikipediaProvider {
         public void run() {
             String pageQuery = "https://"+languageCode+".wikipedia.org/w/api.php?page="+encodeValue(title)+"&format=json&action=parse";
             JSONObject pageResult = sendGET(pageQuery);
+
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
             if (pageResult.keySet().contains("error") && pageResult.getJSONObject("error").getString("code").equals("missingtitle")){
                 return;

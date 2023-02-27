@@ -46,6 +46,7 @@ public class LanguageDetector {
 
 
         }
+        System.out.println("Training Done.");
     }
 
     /**

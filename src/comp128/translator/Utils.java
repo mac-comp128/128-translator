@@ -14,6 +14,7 @@ public class Utils {
     public static final String LANG_ENGLISH = "en";
     public static final String LANG_HINDI = "hi";
     public static final String LANG_SCOTS = "sco";
+    public static final String LANG_SPANISH = "es";
 
     /**
      * A list of all languages to check for when detecting the language or translating.
@@ -21,8 +22,9 @@ public class Utils {
      * Language codes can be found here: https://en.wikipedia.org/wiki/List_of_Wikipedias
      */
     public static final List<String> ALL_LANGS = Arrays.asList(
-            LANG_ENGLISH, LANG_HINDI,
-            LANG_SCOTS);
+            LANG_ENGLISH,
+            LANG_HINDI,
+            LANG_SPANISH);
 
     /**
      * Splits a string into a list of words
