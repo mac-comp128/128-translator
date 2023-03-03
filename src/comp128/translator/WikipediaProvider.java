@@ -199,7 +199,7 @@ public class WikipediaProvider {
                 e.printStackTrace();
             }
 
-            if (pageResult.keySet().contains("error") && pageResult.getJSONObject("error").getString("code").equals("missingtitle")){
+            if (pageResult == null || (pageResult.keySet().contains("error") && pageResult.getJSONObject("error").getString("code").equals("missingtitle"))){ 
                 return;
             }
 
